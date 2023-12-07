@@ -21,7 +21,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Realistic Waterfall 1A1
-  m_Shader: {fileID: -6465566751694194690, guid: e7ca17732f192dc469d5f8b58a26d6f1, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: e7ca17732f192dc469d5f8b58a26d6f1,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -30,6 +33,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -43,6 +47,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     - Texture2D_C45B3B0E:
         m_Texture: {fileID: 2800000, guid: 4b6ed03ad8869324985da78aad5f1178, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -66,6 +82,8 @@ Material:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _Float: 0.73
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Color_1F5500F8: {r: 0.17332679, g: 0.8962264, b: 0.8962264, a: 0}
     - Color_48FD57D2: {r: 0.092175946, g: 0.092175946, b: 0.092175946, a: 0.7294118}
@@ -80,3 +98,16 @@ Material:
     - _Color_1: {r: 0, g: 0, b: 0, a: 0.90588236}
     - _Color_2: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &3267093431234629236
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
