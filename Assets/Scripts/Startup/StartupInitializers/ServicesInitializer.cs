@@ -17,7 +17,7 @@ namespace Startup.StartupInitializers
             var gameSettings = new GameSettingsManager();
             GameContainer.Common.Register(gameSettings);
             
-            var soundsSystemPrefab = Resources.Load<SoundsSystem>("Services/SoundsSystem");
+            var soundsSystemPrefab = Resources.Load<SoundsSystem>("Prefabs/SoundsSystem");
             var soundsSystem = GameContainer.InstantiateAndResolve(soundsSystemPrefab);
             GameContainer.Common.Register(soundsSystem);
             

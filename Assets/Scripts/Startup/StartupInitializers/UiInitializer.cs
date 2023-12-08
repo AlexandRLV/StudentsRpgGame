@@ -2,6 +2,7 @@
 using Services.DI;
 using Services.WindowsSystem;
 using Ui;
+using Ui.Windows;
 using UnityEngine;
 
 namespace Startup.StartupInitializers
@@ -18,6 +19,8 @@ namespace Startup.StartupInitializers
             
             var windowsSystem = GameContainer.Create<WindowsSystem>();
             GameContainer.Common.Register(windowsSystem);
+
+            windowsSystem.CreateWindow<MainMenu>();
             
             return UniTask.CompletedTask;
         }
