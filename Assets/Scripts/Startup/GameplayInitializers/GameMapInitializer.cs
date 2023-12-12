@@ -12,7 +12,7 @@ namespace Startup.GameplayInitializers
         
         public async UniTask Initialize()
         {
-            await SceneManager.LoadSceneAsync(SceneToLoad, LoadSceneMode.Additive);
+            await SceneManager.LoadSceneAsync(SceneToLoad);
 
             var windowsSystem = GameContainer.Common.Resolve<WindowsSystem>();
             windowsSystem.CreateWindow<InGameUI>();

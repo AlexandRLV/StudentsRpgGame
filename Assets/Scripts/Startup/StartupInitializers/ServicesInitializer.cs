@@ -19,6 +19,7 @@ namespace Startup.StartupInitializers
             
             var soundsSystemPrefab = Resources.Load<SoundsSystem>("Prefabs/SoundsSystem");
             var soundsSystem = GameContainer.InstantiateAndResolve(soundsSystemPrefab);
+            Object.DontDestroyOnLoad(soundsSystem.gameObject);
             GameContainer.Common.Register(soundsSystem);
             
             return UniTask.CompletedTask;

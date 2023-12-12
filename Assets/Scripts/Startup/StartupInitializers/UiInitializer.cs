@@ -12,6 +12,7 @@ namespace Startup.StartupInitializers
         public UniTask Initialize()
         {
             var uiRoot = Object.FindObjectOfType<UiRoot>();
+            Object.DontDestroyOnLoad(uiRoot);
             GameContainer.Common.Register(uiRoot);
 
             var gameWindows = Resources.Load<GameWindows>("Configs/Game Windows");
