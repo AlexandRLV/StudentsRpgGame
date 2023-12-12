@@ -72,7 +72,7 @@ TextureImporter:
       213: 21300044
     second: decals_22
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -89,11 +89,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -132,6 +133,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -143,6 +146,46 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -642,32 +685,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      decals_11: 21300022
-      decals_9: 21300018
-      decals_15: 21300030
-      decals_7: 21300014
-      decals_2: 21300004
-      decals_18: 21300036
-      decals_14: 21300028
-      decals_3: 21300006
-      decals_19: 21300038
-      decals_5: 21300010
-      decals_8: 21300016
-      decals_6: 21300012
-      decals_17: 21300034
       decals_0: 21300000
-      decals_10: 21300020
-      decals_13: 21300026
-      decals_4: 21300008
-      decals_20: 21300040
-      decals_22: 21300044
-      decals_12: 21300024
       decals_1: 21300002
-      decals_21: 21300042
+      decals_10: 21300020
+      decals_11: 21300022
+      decals_12: 21300024
+      decals_13: 21300026
+      decals_14: 21300028
+      decals_15: 21300030
       decals_16: 21300032
-  spritePackingTag: 
+      decals_17: 21300034
+      decals_18: 21300036
+      decals_19: 21300038
+      decals_2: 21300004
+      decals_20: 21300040
+      decals_21: 21300042
+      decals_22: 21300044
+      decals_3: 21300006
+      decals_4: 21300008
+      decals_5: 21300010
+      decals_6: 21300012
+      decals_7: 21300014
+      decals_8: 21300016
+      decals_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
