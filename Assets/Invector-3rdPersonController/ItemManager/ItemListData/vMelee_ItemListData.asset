@@ -27,7 +27,7 @@ MonoBehaviour:
   - {fileID: 11437076}
   - {fileID: 11411708}
   - {fileID: 114043347838910644}
-  inEdition: 1
+  inEdition: 0
   itemsHidden: 1
 --- !u!114 &11411124
 MonoBehaviour:
@@ -41,9 +41,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: KeyCard Blue
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 10
   description: Blue Keycard to open doors
   type: 0
@@ -57,6 +54,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 1
+  canBeEquipped: 1
   canBeUsed: 1
   canBeDroped: 1
   canBeDestroyed: 1
@@ -81,9 +79,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: KeyCard Gold
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 12
   description: Gold Keycard to open doors
   type: 0
@@ -97,6 +92,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 1
+  canBeEquipped: 1
   canBeUsed: 1
   canBeDroped: 1
   canBeDestroyed: 1
@@ -121,9 +117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: KeyCard Red
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 11
   description: Red Keycard to open doors
   type: 0
@@ -137,6 +130,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 1
+  canBeEquipped: 1
   canBeUsed: 1
   canBeDroped: 1
   canBeDestroyed: 1
@@ -161,9 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Great Shield
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 9
   description: 'Melee Shield
 
@@ -195,6 +186,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 0
+  canBeEquipped: 1
   canBeUsed: 0
   canBeDroped: 1
   canBeDestroyed: 1
@@ -219,9 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Short Katana
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 1
   description: Melee Weapon
   type: 1
@@ -253,6 +242,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 0
+  canBeEquipped: 1
   canBeUsed: 0
   canBeDroped: 1
   canBeDestroyed: 1
@@ -277,9 +267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Great Sword
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 7
   description: Melee Weapon
   type: 1
@@ -311,6 +298,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 0
+  canBeEquipped: 1
   canBeUsed: 0
   canBeDroped: 1
   canBeDestroyed: 1
@@ -335,9 +323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Great Katana
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 8
   description: Melee Weapon
   type: 1
@@ -369,9 +354,10 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 0
-  canBeUsed: 0
+  canBeEquipped: 1
+  canBeUsed: 1
   canBeDroped: 1
-  canBeDestroyed: 1
+  canBeDestroyed: 0
   EnableAnim: LowFront
   DisableAnim: LowFront
   enableDelayTime: 0.5
@@ -393,9 +379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 6
   description: 'Melee Shield
 
@@ -425,6 +408,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 0
+  canBeEquipped: 1
   canBeUsed: 0
   canBeDroped: 1
   canBeDestroyed: 1
@@ -449,9 +433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Max Health Potion
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 5
   description: Increases the MaxHealth
   type: 0
@@ -469,6 +450,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 1
+  canBeEquipped: 1
   canBeUsed: 1
   canBeDroped: 1
   canBeDestroyed: 1
@@ -493,9 +475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 0
   description: Melee Weapon
   type: 1
@@ -527,6 +506,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 0
+  canBeEquipped: 1
   canBeUsed: 0
   canBeDroped: 1
   canBeDestroyed: 1
@@ -551,9 +531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Stamina Up Potion
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 4
   description: Increase Stamina
   type: 0
@@ -571,6 +548,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 1
+  canBeEquipped: 1
   canBeUsed: 1
   canBeDroped: 1
   canBeDestroyed: 1
@@ -595,9 +573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Short Sword
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 3
   description: Melee Weapon
   type: 1
@@ -629,6 +604,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 0
+  canBeEquipped: 1
   canBeUsed: 0
   canBeDroped: 1
   canBeDestroyed: 1
@@ -653,9 +629,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Health Potion
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 2
   description: Recover Health
   type: 0
@@ -673,6 +646,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 1
+  canBeEquipped: 1
   canBeUsed: 1
   canBeDroped: 1
   canBeDestroyed: 1
@@ -697,9 +671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
   m_Name: Dual Swords
   m_EditorClassIdentifier: 
-  itemsToCraft: []
-  canCraft: 1
-  price: 0
   id: 24
   description: Melee Weapon
   type: 1
@@ -731,6 +702,7 @@ MonoBehaviour:
   isInEquipArea: 0
   isEquiped: 0
   destroyAfterUse: 0
+  canBeEquipped: 1
   canBeUsed: 0
   canBeDroped: 1
   canBeDestroyed: 1

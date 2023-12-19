@@ -804,7 +804,10 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: INVECTOR_BASIC;INVECTOR_MELEE;INVECTOR_AI_TEMPLATE
+    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT;INVECTOR_BASIC;INVECTOR_MELEE;INVECTOR_AI_TEMPLATE
+    Standalone: INVECTOR_BASIC;INVECTOR_MELEE;INVECTOR_AI_TEMPLATE;CROSS_PLATFORM_INPUT
+    Windows Store Apps: MOBILE_INPUT
+    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
