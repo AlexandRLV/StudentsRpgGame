@@ -14,7 +14,7 @@ namespace Invector.vItemManager
         public List<CheckItemIDEvent> itemIDEvents;
         public List<CheckItemTypeEvent> itemTypeEvents;
 
-        void Awake()
+        void Start()
         {
             if (!itemManager)
             {
@@ -22,6 +22,10 @@ namespace Invector.vItemManager
                     itemManager = GetComponentInParent<vItemManager>();
                 else
                     itemManager = GetComponent<vItemManager>();
+                
+                if (!itemManager)
+                    itemManager = FindObjectOfType<vItemManager>();
+
                 itemManager.onEquipItem.AddListener(CheckIsEquipped);
                 itemManager.onUnequipItem.AddListener(CheckIsEquipped);
             }

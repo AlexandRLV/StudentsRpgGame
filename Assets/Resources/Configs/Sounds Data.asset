@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a494f905e874746b5fa786591de579a, type: 3}
   m_Name: Sounds Data
   m_EditorClassIdentifier: 
-  SoundClips: []
-  MusicClips: []
+  SoundClips:
+  - Type: 0
+    Clip: {fileID: 8300000, guid: 4a0916e624d807b47ac9a5db4b4fa89a, type: 3}
+  MusicClips:
+  - Type: 0
+    Clip: {fileID: 0}
+  - Type: 1
+    Clip: {fileID: 0}
