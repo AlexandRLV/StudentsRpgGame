@@ -15,6 +15,10 @@ namespace Startup.StartupInitializers
             Object.DontDestroyOnLoad(uiRoot);
             GameContainer.Common.Register(uiRoot);
 
+            var loadingScreenPrefab = Resources.Load<LoadingScreen>("Prefabs/LoadingScreen");
+            var loadingScreen = Object.Instantiate(loadingScreenPrefab, uiRoot.OverlayParent);
+            GameContainer.Common.Register(loadingScreen);
+
             var gameWindows = Resources.Load<GameWindows>("Configs/Game Windows");
             GameContainer.Common.Register(gameWindows);
             
@@ -22,6 +26,7 @@ namespace Startup.StartupInitializers
             GameContainer.Common.Register(windowsSystem);
 
             windowsSystem.CreateWindow<MainMenu>();
+            loadingScreen.Active = false;
             
             return UniTask.CompletedTask;
         }
