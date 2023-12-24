@@ -13,13 +13,14 @@ namespace Ui.Windows
 
         private void Start()
         {
+            GameContainer.InjectToInstance(this);
             _pauseButton.onClick.AddListener(Pause);
         }
 
         private void Pause()
         {
-            // _windowsSystem.CreateWindow<PauseWindow>();
-            gameObject.SetActive(false);
+            _windowsSystem.CreateWindow<PauseWindow>();
+            // gameObject.SetActive(false);
         }
     }
 }

@@ -9,6 +9,7 @@ namespace Startup.GameplayInitializers
     public class GameMapInitializer : IInitializer
     {
         private const string SceneToLoad = "Level";
+        private const string MainScene = "MainMenu";
         
         public async UniTask Initialize()
         {
@@ -23,7 +24,7 @@ namespace Startup.GameplayInitializers
             var windowsSystem = GameContainer.Common.Resolve<WindowsSystem>();
             windowsSystem.DestroyWindow<InGameUI>();
             
-            await SceneManager.UnloadSceneAsync(SceneToLoad);
+            await SceneManager.LoadSceneAsync(MainScene);
         }
     }
 }
