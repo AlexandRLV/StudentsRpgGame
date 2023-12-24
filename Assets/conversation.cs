@@ -18,4 +18,12 @@ public class conversation : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            ConversationManager.Instance.EndConversation();
+        }
+    }
 }
