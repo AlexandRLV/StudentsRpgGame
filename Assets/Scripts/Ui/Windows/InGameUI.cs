@@ -18,7 +18,8 @@ namespace Ui.Windows
 
         private void Pause()
         {
-            _windowsSystem.CreateWindow<PauseWindow>();
+            // _windowsSystem.CreateWindow<PauseWindow>();
+            gameObject.SetActive(false);
         }
     }
 }

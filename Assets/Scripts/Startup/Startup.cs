@@ -5,6 +5,7 @@ using Services.SoundsSystem;
 using Services.WindowsSystem;
 using Startup.GameplayInitializers;
 using Startup.StartupInitializers;
+using Ui;
 using Ui.Windows;
 using UnityEngine;
 
@@ -25,6 +26,7 @@ namespace Startup
         
         [Inject] private SoundsSystem _soundsSystem;
         [Inject] private WindowsSystem _windowsSystem;
+        [Inject] private LoadingScreen _loadingScreen;
 
         private void Awake()
         {
@@ -33,6 +35,7 @@ namespace Startup
 
         public async UniTask Play()
         {
+            _loadingScreen.Active = true;
             GameContainer.InGame = new Container();
             foreach (var initializer in _gameplayInitializers)
             {
@@ -40,10 +43,12 @@ namespace Startup
             }
             
             // _soundsSystem.PlayMusic(MusicType.InGame);
+            _loadingScreen.Active = false;
         }
 
         public async UniTask GoToMenu()
         {
+            _loadingScreen.Active = true;
             foreach (var initializer in _gameplayInitializers)
             {
                 await initializer.Dispose();
@@ -52,6 +57,7 @@ namespace Startup
             
             // _soundsSystem.PlayMusic(MusicType.MainMenu);
             _windowsSystem.CreateWindow<MainMenu>();
+            _loadingScreen.Active = false;
         }
 
         private async UniTask Initialize()
