@@ -56,7 +56,7 @@ namespace Startup
             GameContainer.InGame = null;
             
             _soundsSystem.PlayMusic(MusicType.MainMenu);
-            _windowsSystem.CreateWindow<MainMenu>();
+            // _windowsSystem.CreateWindow<MainMenu>();
             _loadingScreen.Active = false;
         }
 
