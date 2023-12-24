@@ -24,7 +24,6 @@ namespace Ui.Windows
         
         [Header("Buttons")]
         [SerializeField] private Button _saveButton;
-        [SerializeField] private Button _cancelButton;
 
         [Inject] private GameSettingsManager _gameSettingsManager;
         [Inject] private WindowsSystem _windowsSystem;
@@ -49,11 +48,6 @@ namespace Ui.Windows
             _saveButton.onClick.AddListener(() =>
             {
                 _gameSettingsManager.SaveSettings();
-                _windowsSystem.DestroyWindow(this);
-            });
-            
-            _cancelButton.onClick.AddListener(() =>
-            {
                 _windowsSystem.DestroyWindow(this);
             });
             
@@ -84,7 +78,11 @@ namespace Ui.Windows
             
             _musicOnState.SetActive(settings.enabled);
             _musicOffState.SetActive(!settings.enabled);
-            _musicVolumeSlider.SetValueWithoutNotify(0f);
+
+            if (settings.enabled)
+                _musicVolumeSlider.SetValueWithoutNotify(settings.Volume);
+            else
+                _musicVolumeSlider.SetValueWithoutNotify(0f);
         }
 
         private void ToggleEffects()
@@ -94,7 +92,11 @@ namespace Ui.Windows
             
             _effectsOnState.SetActive(settings.enabled);
             _effectsOffState.SetActive(!settings.enabled);
-            _effectsVolumeSlider.SetValueWithoutNotify(0f);
+            
+            if (settings.enabled)
+                _effectsVolumeSlider.SetValueWithoutNotify(settings.Volume);
+            else
+                _effectsVolumeSlider.SetValueWithoutNotify(0f);
         }
     }
 }

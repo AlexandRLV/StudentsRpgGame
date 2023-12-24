@@ -5772,6 +5772,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c08fa21206f149dab2f9eafa718fcb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _musicToggleButton: {fileID: 4881779215199765412}
+  _effectsToggleButton: {fileID: 3653665071279760863}
+  _musicOnState: {fileID: 197814823180538515}
+  _musicOffState: {fileID: 4673624385047763968}
+  _effectsOnState: {fileID: 4408658484542827356}
+  _effectsOffState: {fileID: 1087417201895518103}
+  _musicVolumeSlider: {fileID: 3409139991238687942}
+  _effectsVolumeSlider: {fileID: 8791267757087944800}
   _saveButton: {fileID: 8249211502016094824}
 --- !u!1 &7120784745444974976
 GameObject:

@@ -42,7 +42,7 @@ namespace Startup
                 await initializer.Initialize();
             }
             
-            // _soundsSystem.PlayMusic(MusicType.InGame);
+            _soundsSystem.PlayMusic(MusicType.InGame);
             _loadingScreen.Active = false;
         }
 
@@ -55,7 +55,7 @@ namespace Startup
             }
             GameContainer.InGame = null;
             
-            // _soundsSystem.PlayMusic(MusicType.MainMenu);
+            _soundsSystem.PlayMusic(MusicType.MainMenu);
             _windowsSystem.CreateWindow<MainMenu>();
             _loadingScreen.Active = false;
         }
@@ -70,7 +70,7 @@ namespace Startup
             }
             
             GameContainer.InjectToInstance(this);
-            // _soundsSystem.PlayMusic(MusicType.MainMenu);
+            _soundsSystem.PlayMusic(MusicType.MainMenu);
         }
     }
 }
