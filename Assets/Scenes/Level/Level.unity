@@ -39896,8 +39896,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraAxisX: Mouse X
   cameraAxisY: Mouse Y
-  _sensitivityX: 0.05
-  _sensitivityY: 0.05
+  _sensitivityX: 0.1
+  _sensitivityY: 0.1
   touchPointer: {fileID: 251420525}
   touchPosToMousePos: 0
 --- !u!114 &883361480
